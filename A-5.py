@@ -33,11 +33,20 @@ def main():
         if max_number < int(i):
             max_number = int(i)
 
+    # 　最小値 1
+    min_number = 999999
+    i = 0
+    for i in separate_list:
+        if min_number > int(i):
+            min_number = int(i)
+
+
+
     # 出力
     print(separate_list)
     print(f'合計値：{add_number}')
     print(f'最大値：{max_number}')
-    print(f'最小値：')
+    print(f'最小値：{min_number}')
     print(f'平均値：')
 
 
