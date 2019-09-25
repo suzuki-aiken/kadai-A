@@ -51,14 +51,19 @@ def main():
     temperature_add = 0
     i = 0
 
-    for weather_list in weather_information:
-        temperature_add += weather_list['temperature']
-        i += 1
+    # for weather_list in weather_information:
+    #     #     temperature_add += weather_list['temperature']
+    #     #     i += 1
+    #     #
+    #     # print(temperature_add / i)
 
-    print(temperature_add / i)
+    # Q2. 大阪府のすべての駅名をカンマ区切りで出力してください( '梅田,大阪,堺' となればOK)
 
+    # 出力
+    for station_name in weather_information:
+        if (station_name['prefecture'] == '大阪府'):
+            print(f"{station_name['station']}", end=" ")
 
-# Q2. 大阪府のすべての駅名をカンマ区切りで出力してください( '梅田,大阪,堺' となればOK)
 
 # Q3. 福岡県の平均気温を計算してください(14.0となればOK)
 
