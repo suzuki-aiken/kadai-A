@@ -51,26 +51,26 @@ def main():
     temperature_add = 0
     i = 0
 
-    # for weather_list in weather_information:
-    #     #     temperature_add += weather_list['temperature']
-    #     #     i += 1
-    #     #
-    #     # print(temperature_add / i)
+    for weather_list in weather_information:
+        temperature_add += weather_list['temperature']
+        i += 1
+
+    print(temperature_add / i)
 
     # Q2. 大阪府のすべての駅名をカンマ区切りで出力してください( '梅田,大阪,堺' となればOK)
 
     # 出力
-    # list_osaka_station = []
-    #
-    # for weather_list2 in weather_information:
-    #     if weather_list2['prefecture'] == '大阪府':
-    #         list_osaka_station.append(weather_list2['station'])
-    #
-    # stationlist_join = ",".join(list_osaka_station)
-    #
-    # print(stationlist_join)
+    list_osaka_station = []
 
-    # Q3. 福岡県の平均気温を計算してください(14.0となればOK)
+    for weather_list2 in weather_information:
+        if weather_list2['prefecture'] == '大阪府':
+            list_osaka_station.append(weather_list2['station'])
+
+    stationlist_join = ",".join(list_osaka_station)
+
+    print(stationlist_join)
+
+    # Q3.福岡県の平均気温を計算してください(14.0となればOK)
 
     # 計算
     hukuoka_temperature = 0
