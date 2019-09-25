@@ -19,8 +19,11 @@ $ python kuku_1.py
 def main():
     # 計算
     # 出力
-    for i in range(1, 10):
-        print(f'{i} ', end="")
+    for j in range(1, 10):
+        print("")
+        for i in range(1, 10):
+            print(f'{i * j} ', end="")
+
 
 if __name__ == '__main__':
-        main()
+    main()
