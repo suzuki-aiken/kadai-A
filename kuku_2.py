@@ -31,10 +31,14 @@ $ python kuku_2.py
 
 
 def main():
+    # 入力
+    a = input("行数を入力：")
+    b = input("列数を入力：")
+    # 出力
     for i in range(1, 10):
         print("")
         for j in range(1, 10):
-            print(f'{i+j}', end="")
+            print(f'{i + j}', end="")
 
 
 if __name__ == '__main__':
