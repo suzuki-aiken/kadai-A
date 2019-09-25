@@ -36,9 +36,10 @@ def main():
     b = input("列数を入力：")
 
     # 出力
-    for i in range(1, int(a)+1):
+    for i in range(1, int(a) + 1):
         print("")
-        for j in range(1, int(b)+1):
+
+        for j in range(1, int(b) + 1):
             print(f'{i * j} ', end="")
 
 
