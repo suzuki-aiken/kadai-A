@@ -26,11 +26,17 @@ def main():
     add_number = 0
     for i in separate_list:
         add_number += int(i)
+    # 最大値 21
+    max_number = -9999999
+    i = 0
+    for i in separate_list:
+        if max_number < int(i):
+            max_number = int(i)
 
     # 出力
     print(separate_list)
     print(f'合計値：{add_number}')
-    print(f'最大値：')
+    print(f'最大値：{max_number}')
     print(f'最小値：')
     print(f'平均値：')
 
