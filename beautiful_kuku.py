@@ -35,7 +35,7 @@ def main():
         print("")
 
         for j in range(1, int(b) + 1):
-            print(f'{i} x {j} = {i * j} | ', end="")
+            print(f'{i:>2} x {j:>2} = {(i * j):>2} | ', end="")
 
 
 if __name__ == '__main__':
