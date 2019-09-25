@@ -12,7 +12,7 @@
 合計値: 54
 最大値: 21
 最小値: 1
-平均値: 6
+平均値: 6 ←　6.75
 """
 
 
@@ -24,7 +24,9 @@ def main():
     separate_list = input_data.split()
     # 合計 54
     add_number = 0
+    number_count = 1
     for i in separate_list:
+        number_count += 1
         add_number += int(i)
     # 最大値 21
     max_number = -9999999
@@ -40,14 +42,14 @@ def main():
         if min_number > int(i):
             min_number = int(i)
 
-
+    # 平均値　6.75
+    average_number = add_number / (len(separate_list))
 
     # 出力
-    print(separate_list)
     print(f'合計値：{add_number}')
     print(f'最大値：{max_number}')
     print(f'最小値：{min_number}')
-    print(f'平均値：')
+    print(f'平均値：{average_number}')
 
 
 if __name__ == '__main__':
