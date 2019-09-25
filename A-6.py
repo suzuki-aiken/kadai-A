@@ -13,8 +13,8 @@ import random
 
 def main():
     # 入力
-    N = input("サイコロの面の数は")
-    M = input("何回振りますか")
+    N = input("サイコロの面の数は?:")
+    M = input("何回振りますか?:")
     # 計算
     dice_line = []
     for i in range(int(M)):
