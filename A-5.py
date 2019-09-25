@@ -22,27 +22,19 @@ def main():
 
     # 計算
     separate_list = input_data.split()
-    # 合計 54
+    # 合計
+    # 最大値
+    # 最小値
+    # 平均値
     add_number = 0
-    number_count = 1
+    max_number = -99999
+    min_number = 99999
     for i in separate_list:
-        number_count += 1
         add_number += int(i)
-    # 最大値 21
-    max_number = -9999999
-    i = 0
-    for i in separate_list:
         if max_number < int(i):
             max_number = int(i)
-
-    # 　最小値 1
-    min_number = 999999
-    i = 0
-    for i in separate_list:
         if min_number > int(i):
             min_number = int(i)
-
-    # 平均値　6.75
     average_number = add_number / (len(separate_list))
 
     # 出力
