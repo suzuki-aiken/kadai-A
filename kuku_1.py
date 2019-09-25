@@ -20,7 +20,7 @@ def main():
     # 計算
     # 出力
     for i in range(1, 10):
-        print(f'{i}')
+        print(f'{i} ', end="")
 
-    if __name__ == '__main__':
+if __name__ == '__main__':
         main()
