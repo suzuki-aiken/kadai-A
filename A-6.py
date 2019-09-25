@@ -8,10 +8,20 @@ N, M はユーザーからの入力を利用すること
 何回振りますか?: 20
 [6, 6, 8, 5, 1, 6, 4, 4, 3, 4, 7, 5, 7, 1, 4, 2, 5, 7, 1, 7]
 """
+import random
 
 
 def main():
-    pass
+    # 入力
+    N = input("サイコロの面の数は")
+    M = input("何回振りますか")
+    # 計算
+    dice_line = []
+    for i in range(int(M)):
+        dice_line.append(random.randint(1, int(N)))
+    # 出力
+    print(dice_line)
+
 
 
 if __name__ == '__main__':
