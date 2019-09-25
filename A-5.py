@@ -22,9 +22,17 @@ def main():
 
     # 計算
     separate_list = input_data.split()
+    # 合計 54
+    add_number = 0
+    for i in separate_list:
+        add_number += int(i)
 
-    print(separate_list)
     # 出力
+    print(separate_list)
+    print(f'合計値：{add_number}')
+    print(f'最大値：')
+    print(f'最小値：')
+    print(f'平均値：')
 
 
 if __name__ == '__main__':
