@@ -47,9 +47,20 @@ def main():
 
     # Q1. 全国の平均気温を計算してください(9.5となればOK)
 
-    # Q2. 大阪府のすべての駅名をカンマ区切りで出力してください( '梅田,大阪,堺' となればOK)
+    # 出力
+    temperature_add = 0
+    i = 0
 
-    # Q3. 福岡県の平均気温を計算してください(14.0となればOK)
+    for weather_list in weather_information:
+        temperature_add += weather_list['temperature']
+        i += 1
+
+    print(temperature_add / i)
+
+
+# Q2. 大阪府のすべての駅名をカンマ区切りで出力してください( '梅田,大阪,堺' となればOK)
+
+# Q3. 福岡県の平均気温を計算してください(14.0となればOK)
 
 
 if __name__ == '__main__':
