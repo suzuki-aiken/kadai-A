@@ -18,7 +18,7 @@
 
 def main():
     # 入力
-    input_data = "1 1 2 3 5 8 13 21"
+    input_data = input("データを入力してください(スペース区切り) >")
 
     # 計算
     separate_list = input_data.split()
